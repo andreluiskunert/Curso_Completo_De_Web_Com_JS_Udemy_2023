@@ -1,0 +1,34 @@
+/* 
+  Quinta-feira, 16/02/2023
+  Das 22:30:00 a 22:40:00 h+|-
+  Duração: 10 minutos
+  ø  Filter #02
+  þ Explica como será a aula...
+*/
+  Array.prototype.filter2 = function(callback){
+    const newArray = []
+    for(let i = 0; i < this.length; i++) {
+      if(callback(this[i], i, this)){
+          newArray.push(this[i])
+      }
+    }
+    return newArray
+  }
+
+const produtos = [
+    {nome: 'Notebook', preco: 2499, fragil: true},
+    {nome: 'iPAD Pro', preco: 4199, fragil: true},
+    {nome: 'Copo de vidro', preco: 12.49, fragil: true},
+    {nome: 'Copo de plastico', preco: 18.99, fragil: false}
+]
+ console.log(produtos.filter(function(p){
+  
+  return false
+ }))
+ const caro = produto => produto.preco <= 500
+ const fragil2= produto => produto.fragil
+ console.log(produtos.filter2(caro).filter2(fragil)) 
+/*
+ [  {nome: 'Notebook', preco: 2499, fragil: true},
+      {nome: 'iPAD Pro', preco: 4199, fragil: true}]
+  */
