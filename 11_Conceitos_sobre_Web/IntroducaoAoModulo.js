@@ -1,0 +1,6 @@
+console.log("Introdução ao Módulo...")
+console.log("Terça-feira,22/08/2023_ das 12:10:00 a 12:35:00 h+|-")
+console.log("Aproveitando o tempo de almoço para estudar...")
+console.log("Explica como será esse módulo...")
+console.log("Conta e explica os principais pontos da origem da Internet...")
+console.log("The End.")
